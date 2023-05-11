@@ -1,0 +1,5 @@
+      # Keep terraform to archive lambdas
+      # - name: Archive lambdas in .zip
+      #   run: |
+      #   for i in $(find ./services -type f -name '*.mjs*' | sed -r 's|/[^/]+$||' |sort |uniq); \
+      #   do (cd "$i"; zip -r "../$(basename $(dirname $(pwd))).zip" .); done
